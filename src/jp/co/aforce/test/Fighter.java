@@ -1,15 +1,15 @@
 package jp.co.aforce.test;
 
-public class Fighter extends PracticeTest7 {
+//Airplaneに継承
+public class Fighter extends Airplane {
 
-	int fly() {
-		System.out.println("飛行します");
-		return 0;
-	}
+	//	public void fly() {
+	//		System.out.println("飛行します");
+	//	}
 
-	int fight() {
+	public void fight() {
 		System.out.println("戦闘します");
-		return 0;
+
 	}
 
 }

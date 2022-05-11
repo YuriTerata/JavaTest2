@@ -12,6 +12,17 @@ public class MinMax {
 			minMax = c;
 		}
 		return minMax;
+
+		//		解答例
+		//		int result = a;
+		//		if (result < b) {
+		//			result = b;
+		//		}
+		//		if (result < c) {
+		//			result = c;
+		//		}
+		//		return result;
+
 	}
 
 	int getMinValue(int a, int b, int c) {
@@ -23,6 +34,16 @@ public class MinMax {
 			minMax = c;
 		}
 		return minMax;
+
+		//		解答例
+		//		int result = a;
+		//		if (result > b) {
+		//			result = b;
+		//		}
+		//		if (result > c) {
+		//			result = c;
+		//		}
+		//		return result;
 	}
 
 }

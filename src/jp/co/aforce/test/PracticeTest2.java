@@ -26,7 +26,7 @@ public class PracticeTest2 {
 		//練習問題5
 		int age = 22;
 		Random rnd = new Random();
-		int randomNumber = rnd.nextInt(100);
+		int randomNumber = rnd.nextInt(101);//0からなので101まで
 		System.out.println("randomNumber=" + randomNumber);
 
 		if (age > randomNumber) {

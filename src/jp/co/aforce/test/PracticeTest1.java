@@ -1,7 +1,7 @@
 package jp.co.aforce.test;
 
 public class PracticeTest1 {
-	static final double TAX = 0.1;
+	private static final double TAX = 0.1;
 
 	public static void main(String[] args) {
 
@@ -11,7 +11,7 @@ public class PracticeTest1 {
 		//練習問題2
 		int x = 480;
 		int price = (int) (x * (1 + TAX));
-		System.out.println(price + "円です");
+		System.out.println("この商品の値段は" + price + "円です");
 
 		//練習問題3
 		String name = "寺田優里";
@@ -22,7 +22,8 @@ public class PracticeTest1 {
 		//制限するもの。読みやすいプログラムにすることができる。
 
 		//練習問題5
-		//protected
+		//デフォルト
+		//※protectedではない
 
 	}
 

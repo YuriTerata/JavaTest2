@@ -8,22 +8,22 @@ public class PracticeTest3 {
 	public static void main(String[] args) {
 
 		//練習問題1
-		String[] Tanaka = { "1", "田中太郎", "男性", "27" };
+		String[] tanaka = { "1", "田中太郎", "男性", "27" };
 
 		//練習問題2
-		System.out.println(Tanaka[1]);
+		System.out.println(tanaka[1]);
 
 		//練習問題4
-		Employee TanakaData = new Employee();
-		TanakaData.setData(1, "田中太郎", "男性", 27);
-
-		Employee SatoData = new Employee();
-		SatoData.setData(2, "佐藤花子", "女性", 22);
-
-		Employee SuzukiData = new Employee();
-		SuzukiData.setData(3, "鈴木次郎", "男性", 31);
-
 		ArrayList<Employee> employees = new ArrayList<>();
+		Employee TanakaData = new Employee(1, "田中太郎", "男性", 27);
+		//TanakaData.setData(1, "田中太郎", "男性", 27);
+
+		Employee SatoData = new Employee(2, "佐藤花子", "女性", 22);
+		//SatoData.setData(2, "佐藤花子", "女性", 22);
+
+		Employee SuzukiData = new Employee(3, "鈴木次郎", "男性", 31);
+		//SuzukiData.setData(3, "鈴木次郎", "男性", 31);
+
 		employees.add(TanakaData);
 		employees.add(SatoData);
 		employees.add(SuzukiData);
@@ -34,12 +34,12 @@ public class PracticeTest3 {
 		}
 
 		//練習問題5
-		HashMap<String, String> Subjects = new HashMap<>();
-		Subjects.put("国語", "90");
-		Subjects.put("数学", "80");
-		Subjects.put("英語", "65");
+		HashMap<String, Integer> Subjects = new HashMap<>();
+		Subjects.put("国語", 90);
+		Subjects.put("数学", 80);
+		Subjects.put("英語", 65);
 
-		for (Entry<String, String> subject : Subjects.entrySet()) {
+		for (Entry<String, Integer> subject : Subjects.entrySet()) {
 			System.out.println(subject.getKey() + ":" + subject.getValue());
 		}
 
